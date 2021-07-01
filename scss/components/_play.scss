@@ -1,0 +1,27 @@
+@import "../base/mixin";
+@import "../base/variables";
+
+.videoplay {
+  border: 0.1em solid grey;
+
+  border-radius: 1.5em 4em 1.5em 4em;
+
+  @media (min-width: 768px) {
+    width: 720px;
+    height: 480px;
+  }
+}
+
+.Play {
+  text-align: center;
+
+  h1 {
+    @include letraBrillante(2.8em, nth($colors, 5));
+    padding-bottom: 1em;
+  }
+}
+
+.h2Blanco {
+  color: aliceblue;
+  font-size: 1.8em;
+}

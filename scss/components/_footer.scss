@@ -1,0 +1,65 @@
+/*/ /////////////////////////////////// FOOTER //////////////////////////////////////*/
+
+footer {
+  background-color: black;
+  border: 0px;
+  padding: 6em 3em;
+
+  .logo {
+    flex: 1;
+    img {
+      display: block;
+      margin: 0 auto 5em;
+      width: 200px;
+      max-width: 100%;
+    }
+  }
+
+  .redesSociales {
+    text-align: center;
+    white-space: nowrap;
+
+    a {
+      display: inline-block;
+
+      vertical-align: middle;
+      width: 50px;
+      height: 50px;
+      border-radius: 40px;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  audio {
+    display: block;
+    margin: 2em auto;
+    width: 350px;
+    max-width: 100%;
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
+    flex-direction: row;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      img {
+        margin-left: 0;
+        margin: 0;
+      }
+    }
+
+    .footerContent {
+      display: flex;
+      align-items: center;
+    }
+
+    .redesSociales {
+      padding: 0 2em;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+/*/ ///////////////////////    PAGINA INDEX   /////////////////////////////*/
+
+.bloqueIndex {
+  background-image: url("https://i.ibb.co/XW5hB38/Purple-Circle.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  .contentIndex {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:hover {
+      background-repeat: no-repeat;
+    }
+  }
+
+  h1 {
+    width: 10em;
+    max-width: 100%;
+    margin: 0 auto 0.8em;
+    padding: 0;
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    // white-space: nowrap;
+  }
+  // span {
+  //   white-space: nowrap;
+  // }
+
+  .botonIndex {
+    pointer-events: all;
+    background-color: black;
+    font-size: 2em;
+    font-weight: 700;
+
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+
+    letter-spacing: 0.1em;
+
+    border: 0.1em outset rgb(194, 194, 194);
+    border-radius: 40px 10px 40px 10px;
+    padding: 0.6em 1.2em;
+
+    transition: all 1s ease-out;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-style: inset;
+      background-color: rgb(245, 245, 245);
+
+      background-image: url("../images/indexhover3.gif");
+      background-position: center;
+      background-size: 120%;
+      overflow: hidden;
+
+      transform: skew(-20deg);
+    }
+    a {
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+}
