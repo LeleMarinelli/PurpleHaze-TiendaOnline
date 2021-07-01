@@ -1,0 +1,188 @@
+@import "../base/maps";
+////////////////////////////////////////////// HEADER ///////////////////////////////////////////////*/
+
+header {
+  position: sticky;
+  z-index: 3;
+  background-color: black;
+  @media (max-width: 991px) {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 5em;
+    text-align: center;
+    position: sticky;
+    top: -0.1em;
+    left: 0em;
+
+    .containerToplogos {
+      height: 5em;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 2em;
+    }
+    .topLogo {
+      position: relative;
+      top: 0;
+      height: 3em;
+      padding: 0;
+      margin: auto;
+    }
+    .topLogoBoton {
+      position: relative;
+      top: 20%;
+      height: 3em;
+      padding: 0;
+      border-radius: 5em 5em 5em 5em;
+    }
+
+    .menu {
+      width: 35%;
+      max-width: 13em;
+      min-width: 9em;
+      overflow: hidden;
+      margin: 0;
+      border: 0.05em double rgb(105, 105, 105);
+      padding: 1em 0.2em 1em 1em;
+
+      list-style-type: none;
+      text-align: left;
+
+      border-radius: 1em 1em 1em 1em;
+
+      background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
+
+      position: relative;
+      top: 1em;
+      left: 1em;
+
+      .botonMenuContainer {
+        a {
+          display: block;
+          font-size: 1.3em;
+          opacity: 1;
+          color: rgb(255, 255, 255);
+          &:hover {
+            text-decoration: line-through;
+          }
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 200px;
+    position: sticky;
+    top: -150px;
+
+    .topLogo {
+      width: 200px;
+      padding: 45px 20px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .topLogoBoton {
+      display: none;
+    }
+
+    .menu {
+      width: 60%;
+      margin: 0;
+      border: 0;
+      list-style-type: none;
+
+      margin: auto;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      li {
+        display: block;
+        color: thistle;
+
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+
+        ul {
+          margin: 10px 0 0;
+          padding: 30px 10px 30px;
+          background-color: black;
+          position: absolute;
+          top: 40px;
+          left: -40px;
+          right: -40px;
+          display: none;
+          text-align: center;
+          z-index: -1;
+
+          border-radius: map-get($bordeRedondeado, tipo2);
+        }
+      }
+
+      .botonMenuContainer {
+        position: relative;
+        margin: auto;
+
+        height: 1.5em;
+        border: 0;
+        padding: 0;
+      }
+
+      .botonMenu {
+        height: 100%;
+        width: 100%;
+        color: #b291e7;
+        padding: 2rem 1.5rem;
+        user-select: none;
+
+        &:hover {
+          color: whitesmoke;
+          background-image: url("../images/bubbles.png");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          animation: animacionBotoMenu 1.5s;
+        }
+        @keyframes animacionBotoMenu {
+          0% {
+            color: rgb(255, 255, 255);
+          }
+          20% {
+            color: #b291e7;
+          }
+          40% {
+            color: #472a77;
+          }
+
+          60% {
+            color: rgb(129, 199, 201);
+          }
+
+          80% {
+            color: #6200ff;
+          }
+          100% {
+            color: #f3c2fa;
+          }
+        }
+      }
+    }
+
+    .panelColeccion {
+      &:hover {
+        color: #f3ebff;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

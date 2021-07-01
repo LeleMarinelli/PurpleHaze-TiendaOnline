@@ -1,0 +1,173 @@
+@import "../base/variables";
+/*/ /////////////////////////////  COLECCION  INDIVIDUAL ////////////////////////////////////*/
+
+.tituloColeccion {
+  text-align: center;
+  padding: 0 0 1em 0;
+
+  @include letraBrillante(2em, nth($colors, 2));
+
+  @media (min-width: 768px) and (max-width: 1199px) {
+    font-size: 3em;
+    padding: 0 0 0.9em 0;
+  }
+  @media (min-width: 1200px) {
+    font-size: 4em;
+    padding: 0 0 0.9em 0;
+  }
+}
+
+.scrollFotosColecciones {
+  margin: 0 -4em;
+  img {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 -3em;
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    row-gap: 1em;
+    column-gap: 1em;
+
+    .scrollFotosColeccionesHijo img {
+      display: block;
+      width: 100%;
+      height: 35em;
+      object-fit: cover;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+}
+
+.scrollFotosColeccionesHijo img {
+  display: block;
+  width: 100%;
+  height: 35em;
+  object-fit: cover;
+}
+
+.scrollFotosColeccionesHijo {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(1) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(3) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(6) {
+      grid-column-start: span 2;
+    }
+    &:nth-child(8) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(12) {
+      grid-column-start: span 3;
+    }
+
+    &:nth-child(14) {
+      grid-column-start: span 2;
+    }
+    &:nth-child(15) {
+      grid-column-start: span 3;
+    }
+    &:nth-child(19) {
+      grid-column-start: span 3;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &:nth-child(1) {
+      grid-column-start: span 3;
+    }
+    &:nth-child(3) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(6) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(8) {
+      grid-column-start: span 3;
+    }
+
+    &:nth-child(11) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(12) {
+      grid-column-start: span 3;
+    }
+
+    &:nth-child(14) {
+      grid-column-start: span 2;
+    }
+    &:nth-child(15) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(17) {
+      grid-column-start: span 2;
+    }
+
+    &:nth-child(19) {
+      grid-column-start: span 2;
+    }
+  }
+}
+
+/* ////////////////   COLECCION 2014   ///////////*/
+
+.scrollFotosColecciones2014 {
+  margin: 0 -4em;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    row-gap: 1em;
+    column-gap: 1em;
+  }
+}
+
+.scrollFotosColeccionesHijo2014 {
+  &:nth-child(1) {
+    grid-row-start: span 2;
+  }
+
+  &:nth-child(10) {
+    grid-row-start: span 2;
+  }
+  &:nth-child(14) {
+    grid-row-start: span 3;
+  }
+  &:nth-child(15) {
+    grid-row-start: span 2;
+  }
+}

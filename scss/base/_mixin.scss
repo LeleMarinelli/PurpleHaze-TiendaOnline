@@ -1,0 +1,76 @@
+@import "../base/variables";
+
+@mixin letraBrillante($size, $colors) {
+  margin: 0;
+  color: #fff;
+  font-size: $size;
+
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px $colors, 0 0 70px $colors,
+    0 0 80px $colors, 0 0 100px $colors, 0 0 140px $colors;
+
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: $size * 1.3;
+    padding-bottom: 0.5em;
+  }
+}
+
+@mixin letraPoison($size) {
+  font-family: "Racing Sans One";
+  font-size: $size;
+  text-shadow: $hard rgb(43, 43, 43);
+  word-spacing: 0.3em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0 0 0.3em 0;
+  animation: move linear 2000ms infinite;
+
+  @media (min-width: 768px) {
+    padding: 1em 0;
+    font-size: 3em;
+  }
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 (nth($colors, 1)), 3px -3px 0 (nth($colors, 1)),
+      2px -2px 0 (nth($colors, 1)), 1px -1px 0 (nth($colors, 1)),
+      -4px 4px 0 (nth($colors, 3)), -3px 3px 0 (nth($colors, 3)),
+      -2px 2px 0 (nth($colors, 3)), -1px 1px 0 (nth($colors, 3));
+  }
+  25% {
+    text-shadow: -4px -4px 0 (nth($colors, 3)), -3px -3px 0 (nth($colors, 3)),
+      -2px -2px 0 (nth($colors, 3)), -1px -1px 0 (nth($colors, 3)),
+      4px 4px 0 (nth($colors, 1)), 3px 3px 0 (nth($colors, 1)),
+      2px 2px 0 (nth($colors, 1)), 1px 1px 0 (nth($colors, 1));
+  }
+  50% {
+    text-shadow: -4px 4px 0 (nth($colors, 1)), -3px 3px 0 (nth($colors, 1)),
+      -2px 2px 0 (nth($colors, 1)), -1px 1px 0 (nth($colors, 1)),
+      4px -4px 0 (nth($colors, 3)), 3px -3px 0 (nth($colors, 3)),
+      2px -2px 0 (nth($colors, 3)), 1px -1px 0 (nth($colors, 3));
+  }
+  75% {
+    text-shadow: 4px 4px 0 (nth($colors, 3)), 3px 3px 0 (nth($colors, 3)),
+      2px 2px 0 hs (nth($colors, 3)), 1px 1px 0 (nth($colors, 3)),
+      -4px -4px 0 (nth($colors, 1)), -3px -3px 0 (nth($colors, 1)),
+      -2px -2px 0 (nth($colors, 1)), -1px -1px 0 (nth($colors, 1));
+  }
+  100% {
+    text-shadow: 4px -4px 0 (nth($colors, 1)), 3px -3px 0 (nth($colors, 1)),
+      2px -2px 0 (nth($colors, 1)), 1px -1px 0 (nth($colors, 1)),
+      -4px 4px 0 (nth($colors, 3)), -3px 3px 0 (nth($colors, 3)),
+      -2px 2px 0 (nth($colors, 3)), -1px 1px 0 (nth($colors, 3));
+  }
+}
+
+@mixin carta1 {
+  border: 0.3em inset rgb(150, 134, 63);
+  background-image: url("https://i.ibb.co/K54kdK9/marble-stone.jpg");
+  text-align: center;
+  display: flex;
+}
