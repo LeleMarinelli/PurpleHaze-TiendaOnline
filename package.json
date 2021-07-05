@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeleMarinelli/paginapurplehaze.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LeleMarinelli/paginapurplehaze/issues"
+  },
+  "homepage": "https://github.com/LeleMarinelli/paginapurplehaze#readme",
   "description": ""
 }
