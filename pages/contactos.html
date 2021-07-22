@@ -73,11 +73,7 @@
                     <a href="play.html" class="botonMenu">Play</a>
                 </li>
                 <li class="botonMenuContainer">
-<<<<<<< HEAD
-                    <a href="Dolls.html" class="botonMenu">Dolls</a>
-=======
                     <a href="dolls.html" class="botonMenu">Dolls</a>
->>>>>>> main
                 </li>
                 <li class="botonMenuContainer">
                     <a href="contactos.html" class="botonMenu">Contacto</a>
@@ -87,7 +83,21 @@
     </header>
 
 
-    <img id="proximamente" src="../images/proximamente.jpg" alt="Circle que dice Proximamente">
+    <form action="contacto.php" method="POST" name="contacto">
+    <label for="name">Nombre</label>
+    <input type="text" name="nombre" id="name">
+
+    <label for="mail">Email</label>
+    <input type="email" name="email" id="mail">
+
+    <label for="subjet">Asunto</label>
+    <input type="subjet" name="subjet" id="asunto">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Enviar">
+    </form>
 
 
     <footer>
