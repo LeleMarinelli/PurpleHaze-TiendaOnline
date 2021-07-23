@@ -82,8 +82,58 @@
         </nav>
     </header>
 
+    <!-- /// FORMULARIO! /// -->
+    <div class="w-75 align-items-center">
+        <form action="contacto.php" method="POST" name="contacto"></form>
+            <!-- Nombre -->
+            <div class="m-3">
+                <label for="nombre" class="form-label">Tus datos</label>
+                <input class="form-control" id="nombre" name="nombre" placeholder="Nombre o nickname">
+                
+                <div class="input-group m-3 form-label">
+                    <span class="input-group-text" id="arrobaFijo">@</span>
+                    <input type="text" class="form-control" placeholder="Instagram" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+            </div>
 
-    <form action="contacto.php" method="POST" name="contacto">
+
+            <!-- Mail -->
+            <div class="m-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+            </div>
+
+
+            <!-- Dropdown asunto -->
+            <div class="m-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Motivo del mensaje</option>
+                <option value="1">Custom made</option>
+                <option value="2">Estado de una compra realizada</option>
+                <option value="3">Compra por mayor</option>
+                <option value="3">Otras consultas</option>
+            </select>
+            </div>
+  
+
+            <!-- Mensaje -->
+            <div class="m-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+            </div>
+
+
+            <!-- Boton enviar -->
+            <div class="row col-6 align-items-center">
+                <button class="btn btn-primary" type="submit" value="Enviar">Enviar consulta</button>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- <form action="contacto.php" method="POST" name="contacto">
     <label for="name">Nombre</label>
     <input type="text" name="nombre" id="name">
 
@@ -98,6 +148,8 @@
 
     <input type="submit" value="Enviar">
     </form>
+    -->
+
 
 
     <footer>
