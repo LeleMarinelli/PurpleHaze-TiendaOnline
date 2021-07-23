@@ -17,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Titillium+Web:wght@400;700&display=swap"
         rel="stylesheet">
+    
+    <!-- JavaScript -->
+    <script defer src="burger.js"></script>
 
     <!-- Description -->
     <meta name="description"
@@ -38,22 +41,21 @@
 <body>
     <header>
         <div class="containerToplogos">
-            <img class="topLogoBoton hamburguer" src="../images/hamburguerLogo.png" alt="">
+            <button class="toggle"> </button>
             <img class="topLogo" src="../images/blanco.jpg" alt="Logo Purple Haze">
             <img class="topLogoBoton" src="../images/sparkles-icon-16.png" alt="">
         </div>
-
-
+    
         <nav>
-            <ul class="menu">
+            <ul class="menu menu_visible">
                 <li class="botonMenuContainer">
-                    <a href="home.html" class="botonMenu">Home</a>
+                    <a href="home.html" class="botonMenu" title="Acceso directo al home">Home</a>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="history.html" class="botonMenu"> ¿¿¿🧬??? </a>
+                    <a href="history.html" class="botonMenu" title="Acceso directo a History"> ¿¿¿🧬??? </a>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="colecciones.html" class="botonMenu">Colecciones</a>
+                    <a href="colecciones.html" class="botonMenu" title="Acceso directo a Colecciones">Colecciones</a>
                     <ul>
                         <li><a href="colecciones/colecciones-2013.html" class="panelColeccion">THE NEW LAW (2013)</a>
                         </li>
@@ -66,16 +68,16 @@
                     </ul>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="shop.html" class="botonMenu">Shop</a>
+                    <a href="shop.html" class="botonMenu" title="Acceso directo al shop">Shop</a>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="play.html" class="botonMenu">Play</a>
+                    <a href="play.html" class="botonMenu" title="Acceso directo a Play">Play</a>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="dolls.html" class="botonMenu">Dolls</a>
+                    <a href="dolls.html" class="botonMenu" title="Acceso directo para concer nuestras dolls">Dolls</a>
                 </li>
                 <li class="botonMenuContainer">
-                    <a href="contactos.html" class="botonMenu">Contacto</a>
+                    <a href="contactos.html" class="botonMenu" title="Acceso directo a Contactos">Contacto</a>
                 </li>
             </ul>
         </nav>
