@@ -138,7 +138,7 @@ header {
     position: relative;
     top: 1em;
     left: -14em;
-    transition: right 0.3s;
+    transition: left 0.3s;
   }
   header .menu .botonMenuContainer a {
     display: block;
