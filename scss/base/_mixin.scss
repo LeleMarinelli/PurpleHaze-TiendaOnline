@@ -18,6 +18,11 @@
   }
 }
 
+@mixin cuadroBrillante($colors) {
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px $colors, 0 0 60px $colors,
+    0 0 70px $colors, 0 0 90px $colors, 0 0 130px $colors;
+}
+
 @mixin letraPoison($size) {
   font-family: "Racing Sans One";
   font-size: $size;

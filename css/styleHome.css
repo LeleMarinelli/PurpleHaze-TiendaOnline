@@ -111,6 +111,7 @@ header {
     position: relative;
     top: 1em;
     left: 1em;
+    display: none;
   }
   header .menu .botonMenuContainer a {
     display: block;
@@ -884,6 +885,74 @@ footer audio {
   .videoMica {
     width: 1080px;
     height: 720px;
+  }
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #6d47ce, -3px -3px 0 #6d47ce, -2px -2px 0 #6d47ce, -1px -1px 0 #6d47ce, 4px 4px 0 #8100eb, 3px 3px 0 #8100eb, 2px 2px 0 #8100eb, 1px 1px 0 #8100eb;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #8100eb, -3px 3px 0 #8100eb, -2px 2px 0 #8100eb, -1px 1px 0 #8100eb, 4px -4px 0 #6d47ce, 3px -3px 0 #6d47ce, 2px -2px 0 #6d47ce, 1px -1px 0 #6d47ce;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #6d47ce, 3px 3px 0 #6d47ce, 2px 2px 0 hs #6d47ce, 1px 1px 0 #6d47ce, -4px -4px 0 #8100eb, -3px -3px 0 #8100eb, -2px -2px 0 #8100eb, -1px -1px 0 #8100eb;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+}
+.formulario {
+  padding: 0 0 2.5em 0;
+  color: white;
+}
+.formulario p {
+  margin: 0;
+  text-align: center;
+}
+.formulario h1 {
+  padding-bottom: 0 !important;
+  margin: 0;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-size: 2.8em;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #8100eb, 0 0 70px #8100eb, 0 0 80px #8100eb, 0 0 100px #8100eb, 0 0 140px #8100eb;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .formulario h1 {
+    font-size: 3.64em;
+    padding-bottom: 0.5em;
+  }
+}
+.formulario .btn {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 1em 3em 1em 3em;
+  border: 0.25em double #6d47ce;
+}
+.formulario .containerForm {
+  width: 95%;
+  margin: 1em auto 2.5em;
+  padding: 2em 1em;
+  border-radius: 1em 3em 1em 3em;
+  border: 0.25em double #8100eb;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 25px #6d47ce, 0 0 60px #6d47ce, 0 0 70px #6d47ce, 0 0 90px #6d47ce, 0 0 130px #6d47ce;
+}
+@media (min-width: 768px) {
+  .formulario .containerForm {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .formulario .containerForm {
+    width: 50%;
   }
 }
 

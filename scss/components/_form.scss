@@ -1,0 +1,42 @@
+@import "../base/mixin";
+@import "../base/variables";
+@import "../base/maps";
+
+.formulario {
+  padding: 0 0 2.5em 0;
+  color: white;
+  p {
+    margin: 0;
+    text-align: center;
+  }
+  h1 {
+    padding-bottom: 0 !important    ;
+    margin: 0;
+    text-align: center;
+    @include letraBrillante(2.8em, nth($colors, 1));
+  }
+
+  .btn {
+    width: 100%;
+    background-color: transparent;
+    border-radius: map-get($bordeRedondeado, tipo3);
+    border: 0.25em double (nth($colors, 3));
+  }
+
+  .containerForm {
+    width: 95%;
+    margin: 1em auto 2.5em;
+    padding: 2em 1em;
+    border-radius: map-get($bordeRedondeado, tipo3);
+    border: 0.25em double (nth($colors, 1));
+
+    @include cuadroBrillante(nth($colors, 3));
+
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+  }
+}
