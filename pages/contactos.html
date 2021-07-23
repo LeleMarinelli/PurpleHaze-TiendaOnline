@@ -83,13 +83,14 @@
     </header>
 
     <!-- /// FORMULARIO! /// -->
-    <div class="w-75 align-items-center">
+    <div class=" align-items-center">
         <form action="contacto.php" method="POST" name="contacto"></form>
             <!-- Nombre -->
-            <div class="m-3">
+            <div class="m-3 row col-lg-6">
+                <!-- name o nick-->
                 <label for="nombre" class="form-label">Tus datos</label>
                 <input class="form-control" id="nombre" name="nombre" placeholder="Nombre o nickname">
-                
+                <!-- instagram -->
                 <div class="input-group m-3 form-label">
                     <span class="input-group-text" id="arrobaFijo">@</span>
                     <input type="text" class="form-control" placeholder="Instagram" aria-label="Username"
@@ -99,14 +100,14 @@
 
 
             <!-- Mail -->
-            <div class="m-3">
+            <div class="m-3 row col-lg-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
             </div>
 
 
             <!-- Dropdown asunto -->
-            <div class="m-3">
+            <div class="m-3 row col-lg-6">
             <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
             <select class="form-select" aria-label="Default select example">
                 <option selected>Motivo del mensaje</option>
@@ -119,16 +120,16 @@
   
 
             <!-- Mensaje -->
-            <div class="m-3">
+            <div class="m-3 row col-lg-6">
                 <label for="mensaje" class="form-label">Mensaje</label>
                 <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
             </div>
 
 
             <!-- Boton enviar -->
-            <div class="row col-6 align-items-center">
-                <button class="btn btn-primary" type="submit" value="Enviar">Enviar consulta</button>
-            </div>
+
+            <input class="btn btn-primary row col-11 col-lg-6 align-items-center m-3" type="submit" value="Enviar">
+
         </form>
     </div>
 
