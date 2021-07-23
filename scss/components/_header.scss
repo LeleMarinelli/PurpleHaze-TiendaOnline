@@ -5,6 +5,7 @@ header {
   position: sticky;
   z-index: 3;
   background-color: black;
+
   @media (max-width: 991px) {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -33,7 +34,17 @@ header {
       top: 20%;
       height: 3em;
       padding: 0;
-      border-radius: 5em 5em 5em 5em;
+    }
+
+    .toggle {
+      height: 3em;
+      width: 3em;
+      position: relative;
+      top: 20%;
+      background-color: black;
+      background-image: url("https://i.ibb.co/8XtMbjg/hamburguer-Logo-Opt.png");
+      background-size: cover;
+      border: transparent;
     }
 
     .menu {
@@ -54,9 +65,8 @@ header {
 
       position: relative;
       top: 1em;
-      left: 1em;
-
-      display: none;
+      left: -10em;
+      transition: right 0.3s;
 
       .botonMenuContainer {
         a {
@@ -75,6 +85,11 @@ header {
       }
     }
   }
+
+  .menu_visible {
+    left: 1em;
+  }
+
   @media (min-width: 992px) {
     margin: 0;
     padding: 0;
@@ -91,6 +106,10 @@ header {
     }
 
     .topLogoBoton {
+      display: none;
+    }
+
+    .toggle {
       display: none;
     }
 

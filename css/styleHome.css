@@ -94,7 +94,16 @@ header {
     top: 20%;
     height: 3em;
     padding: 0;
-    border-radius: 5em 5em 5em 5em;
+  }
+  header .toggle {
+    height: 3em;
+    width: 3em;
+    position: relative;
+    top: 20%;
+    background-color: black;
+    background-image: url("https://i.ibb.co/8XtMbjg/hamburguer-Logo-Opt.png");
+    background-size: cover;
+    border: transparent;
   }
   header .menu {
     width: 35%;
@@ -110,8 +119,8 @@ header {
     background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
     position: relative;
     top: 1em;
-    left: 1em;
-    display: none;
+    left: -10em;
+    transition: right 0.3s;
   }
   header .menu .botonMenuContainer a {
     display: block;
@@ -125,6 +134,9 @@ header {
   header .menu ul {
     display: none;
   }
+}
+header .menu_visible {
+  left: 1em;
 }
 @media (min-width: 992px) {
   header {
@@ -142,6 +154,9 @@ header {
     margin: 0 auto;
   }
   header .topLogoBoton {
+    display: none;
+  }
+  header .toggle {
     display: none;
   }
   header .menu {
@@ -448,6 +463,7 @@ footer audio {
     border: 0.3em outset #837432;
     transform: rotate(1turn) scale(1.1);
     box-shadow: 0.1em 0.2em 0.2em 0.2em black;
+    animation: vibrate-1 0.3s linear infinite both;
   }
   .galeriaProducto .productosContainerGrid .cajaItem:active {
     transform: scale(1.8);

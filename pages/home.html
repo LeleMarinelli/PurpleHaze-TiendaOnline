@@ -21,6 +21,9 @@
     <!-- Animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+    <!-- JavaScript -->
+    <script defer src="burger.js"></script>
+
     <!-- Description -->
     <meta name="description" content="Marca de ropa independiente based in Argentina. Ropa de lujo para todos los dias. 
     Encontra en Purple Haze prendas exclusivas de diseño de autor y colaboraciones con otros artistas.">
@@ -40,14 +43,13 @@
 <body>
     <header>
         <div class="containerToplogos">
-            <img class="topLogoBoton hamburguer" src="../images/hamburguerLogo.png" alt="">
+            <button class="toggle"> </button>
             <img class="topLogo" src="../images/blanco.jpg" alt="Logo Purple Haze">
             <img class="topLogoBoton" src="../images/sparkles-icon-16.png" alt="">
         </div>
 
-
         <nav>
-            <ul class="menu">
+            <ul class="menu menu_visible">
                 <li class="botonMenuContainer">
                     <a href="home.html" class="botonMenu" title="Acceso directo al home">Home</a>
                 </li>
@@ -146,14 +148,14 @@
 
             <div class="productosContainer productosContainerGrid">
 
-                <div class="cajaItem">
+                <div class="cajaItem flip-vertical-right">
                     <img src="https://i.ibb.co/tCg01dF/lista-Productos101.jpg" alt="Foto Catsuit Biolummens x BB.motion"
                         loading="lazy">
                     <a href="#" title="Acceso directo al producto mostrado">Catsuit Biolummens</a>
                     <p>$6.999</p>
                 </div>
 
-                <div class="cajaItem">
+                <div class="cajaItem flip-vertical-right">
                     <img src="https://i.ibb.co/ZcTg2Kd/lista-Productos102.jpg"
                         alt="Foto bb.Vcrop Biolummens x BB.motion" loading="lazy">
                     <a href="#" title="Acceso directo al producto mostrado">bb.Vcrop Biolummens</a>

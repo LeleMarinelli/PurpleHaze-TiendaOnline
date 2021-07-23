@@ -133,6 +133,7 @@
           border: 0.3em outset rgb(131, 116, 50);
           transform: rotate(1turn) scale(1.1);
           box-shadow: 0.1em 0.2em 0.2em 0.2em black;
+          animation: vibrate-1 0.3s linear infinite both;
         }
 
         &:active {
