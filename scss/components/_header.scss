@@ -1,4 +1,5 @@
 @import "../base/maps";
+@import "../base/mixin";
 ////////////////////////////////////////////// HEADER ///////////////////////////////////////////////*/
 
 header {
@@ -48,7 +49,7 @@ header {
     }
 
     .menu {
-      width: 35%;
+      width: 48%;
       max-width: 13em;
       min-width: 9em;
       overflow: hidden;
@@ -60,12 +61,13 @@ header {
       text-align: left;
 
       border-radius: 1em 1em 1em 1em;
+      box-shadow: 0 0 5px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
 
       background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
 
       position: relative;
       top: 1em;
-      left: -10em;
+      left: -14em;
       transition: right 0.3s;
 
       .botonMenuContainer {

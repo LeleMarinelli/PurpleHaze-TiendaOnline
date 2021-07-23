@@ -60,6 +60,23 @@
   color: #fff;
 }
 
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #6d47ce, -3px -3px 0 #6d47ce, -2px -2px 0 #6d47ce, -1px -1px 0 #6d47ce, 4px 4px 0 #8100eb, 3px 3px 0 #8100eb, 2px 2px 0 #8100eb, 1px 1px 0 #8100eb;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #8100eb, -3px 3px 0 #8100eb, -2px 2px 0 #8100eb, -1px 1px 0 #8100eb, 4px -4px 0 #6d47ce, 3px -3px 0 #6d47ce, 2px -2px 0 #6d47ce, 1px -1px 0 #6d47ce;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #6d47ce, 3px 3px 0 #6d47ce, 2px 2px 0 hs #6d47ce, 1px 1px 0 #6d47ce, -4px -4px 0 #8100eb, -3px -3px 0 #8100eb, -2px -2px 0 #8100eb, -1px -1px 0 #8100eb;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+}
 header {
   position: sticky;
   z-index: 3;
@@ -106,7 +123,7 @@ header {
     border: transparent;
   }
   header .menu {
-    width: 35%;
+    width: 48%;
     max-width: 13em;
     min-width: 9em;
     overflow: hidden;
@@ -116,10 +133,11 @@ header {
     list-style-type: none;
     text-align: left;
     border-radius: 1em 1em 1em 1em;
+    box-shadow: 0 0 5px black, 0 0 15px black;
     background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
     position: relative;
     top: 1em;
-    left: -10em;
+    left: -14em;
     transition: right 0.3s;
   }
   header .menu .botonMenuContainer a {
