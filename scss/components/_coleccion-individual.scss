@@ -5,169 +5,168 @@
   text-align: center;
   padding: 0 0 1em 0;
 
-  @include letraBrillante(2em, nth($colors, 2));
-
-  @media (min-width: 768px) and (max-width: 1199px) {
+  @media (min-width: 768px) {
     font-size: 3em;
     padding: 0 0 0.9em 0;
   }
   @media (min-width: 1200px) {
-    font-size: 4em;
+    font-size: 6em;
     padding: 0 0 0.9em 0;
   }
 }
 
 .scrollFotosColecciones {
-  margin: 0 -4em;
+  margin: auto;
+  width: 92%;
+  padding-bottom: 2em;
   img {
     width: 100%;
-  }
-  @media (min-width: 768px) and (max-width: 1199px) {
-    margin: 0 -3em;
-    padding: 1em;
+    height: 100%;
+    display: block;
 
+    margin: auto;
+    object-fit: cover;
+
+    border-radius: 1.5em;
+    border: 0.1em groove rgb(0, 0, 0);
+  }
+
+  @media (min-width: 768px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 
     row-gap: 1em;
     column-gap: 1em;
 
-    .scrollFotosColeccionesHijo img {
-      display: block;
-      width: 100%;
-      height: 35em;
-      object-fit: cover;
+    .scrollFotosColeccionesHijo {
+      img {
+        display: block;
+
+        object-fit: cover;
+      }
     }
   }
 
   @media (min-width: 1200px) {
-    margin: 0;
-
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
 
-    row-gap: 1em;
-    column-gap: 1em;
+    row-gap: 1.3em;
+    column-gap: 1.3em;
   }
 }
 
-.scrollFotosColeccionesHijo img {
-  display: block;
-  width: 100%;
-  height: 35em;
-  object-fit: cover;
-}
+#coleccion-2013 {
+  .tituloColeccion {
+    @include letraBrillante(2em, nth($colors, 2));
+  }
 
-.scrollFotosColeccionesHijo {
-  @media (min-width: 768px) and (max-width: 1199px) {
-    &:nth-child(1) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(3) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(6) {
-      grid-column-start: span 2;
-    }
-    &:nth-child(8) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(12) {
-      grid-column-start: span 3;
-    }
-
-    &:nth-child(14) {
-      grid-column-start: span 2;
-    }
-    &:nth-child(15) {
-      grid-column-start: span 3;
-    }
-    &:nth-child(19) {
-      grid-column-start: span 3;
+  @media (min-width: 768px) {
+    .scrollFotosColeccionesHijo {
+      &:nth-child(1) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(8) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(11) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(12) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(15) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(17) {
+        grid-row-start: span 2;
+      }
+      &:nth-child(19) {
+        grid-column-start: span 2;
+      }
     }
   }
 
   @media (min-width: 1200px) {
-    &:nth-child(1) {
-      grid-column-start: span 3;
-    }
-    &:nth-child(3) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(6) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(8) {
-      grid-column-start: span 3;
-    }
-
-    &:nth-child(11) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(12) {
-      grid-column-start: span 3;
-    }
-
-    &:nth-child(14) {
-      grid-column-start: span 2;
-    }
-    &:nth-child(15) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(17) {
-      grid-column-start: span 2;
-    }
-
-    &:nth-child(19) {
-      grid-column-start: span 2;
+    .scrollFotosColeccionesHijo {
+      &:nth-child(1) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(6) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(8) {
+        grid-column-start: span 3;
+      }
+      &:nth-child(12) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(15) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(17) {
+        grid-row-start: span 2;
+      }
+      &:nth-child(19) {
+        grid-column-start: span 2;
+      }
     }
   }
 }
 
 /* ////////////////   COLECCION 2014   ///////////*/
 
-.scrollFotosColecciones2014 {
-  margin: 0 -4em;
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#coleccion-2014 {
+  .tituloColeccion {
+    @include letraBrillante(2em, nth($colors, 6));
   }
-
   @media (min-width: 1200px) {
-    margin: 0;
+    .scrollFotosColeccionesHijo {
+      &:nth-child(1) {
+        grid-row-start: span 2;
+      }
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-
-    row-gap: 1em;
-    column-gap: 1em;
+      &:nth-child(10) {
+        grid-row-start: span 2;
+      }
+      &:nth-child(14) {
+        grid-row-start: span 3;
+      }
+      &:nth-child(15) {
+        grid-row-start: span 2;
+      }
+    }
   }
 }
 
-.scrollFotosColeccionesHijo2014 {
-  &:nth-child(1) {
-    grid-row-start: span 2;
+#coleccion-2015 {
+  .tituloColeccion {
+    @include letraBrillante(2em, nth($colors, 4));
   }
 
-  &:nth-child(10) {
-    grid-row-start: span 2;
-  }
-  &:nth-child(14) {
-    grid-row-start: span 3;
-  }
-  &:nth-child(15) {
-    grid-row-start: span 2;
+  @media (min-width: 1200px) {
+    .scrollFotosColeccionesHijo {
+      &:nth-child(1) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(12) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(13) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(15) {
+        grid-row-start: span 2;
+      }
+      &:nth-child(21) {
+        grid-column-start: span 3;
+      }
+      &:nth-child(24) {
+        grid-row-start: span 2;
+      }
+      &:nth-child(26) {
+        grid-row-start: span 2;
+      }
+    }
   }
 }
