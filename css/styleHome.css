@@ -636,6 +636,9 @@ footer audio {
   width: 92%;
   padding-bottom: 2em;
 }
+.scrollFotosColecciones .scrollFotosColeccionesHijo {
+  padding-bottom: 1em;
+}
 .scrollFotosColecciones img {
   width: 100%;
   height: 100%;
