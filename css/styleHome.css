@@ -124,6 +124,7 @@ header {
   }
   header .menu {
     width: 48%;
+    height: 17em;
     max-width: 13em;
     min-width: 9em;
     overflow: hidden;
@@ -135,8 +136,8 @@ header {
     border-radius: 1em 1em 1em 1em;
     box-shadow: 0 0 5px black, 0 0 15px black;
     background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
-    position: relative;
-    top: 1em;
+    position: absolute;
+    top: 6em;
     left: -14em;
     transition: left 0.3s;
   }
@@ -523,6 +524,7 @@ footer audio {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  pointer-events: all;
 }
 .scrollColecciones .cajaColeccion {
   position: relative;
@@ -531,6 +533,7 @@ footer audio {
   overflow: hidden;
   border-bottom: 4px double black;
   text-align: center;
+  pointer-events: all;
   background-position: center;
   background-size: cover;
 }
@@ -544,6 +547,7 @@ footer audio {
   font-size: 3em;
   font-weight: 700;
   text-decoration: none;
+  pointer-events: all;
   display: flex;
   align-items: center;
   justify-content: center;

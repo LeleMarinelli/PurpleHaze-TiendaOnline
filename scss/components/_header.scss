@@ -50,6 +50,7 @@ header {
 
     .menu {
       width: 48%;
+      height: 17em;
       max-width: 13em;
       min-width: 9em;
       overflow: hidden;
@@ -65,8 +66,8 @@ header {
 
       background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
 
-      position: relative;
-      top: 1em;
+      position: absolute;
+      top: 6em;
       left: -14em;
       transition: left 0.3s;
 
