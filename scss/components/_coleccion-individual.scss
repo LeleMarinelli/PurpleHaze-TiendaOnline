@@ -170,3 +170,31 @@
     }
   }
 }
+
+#coleccion-2017 {
+  .tituloColeccion {
+    @include letraBrillante(2em, nth($colors, 7));
+  }
+
+  @media (min-width: 1200px) {
+    .scrollFotosColeccionesHijo {
+      &:nth-child(1) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+      }
+      &:nth-child(6) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(11) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(16) {
+        grid-column-start: span 2;
+      }
+      &:nth-child(21) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+      }
+    }
+  }
+}

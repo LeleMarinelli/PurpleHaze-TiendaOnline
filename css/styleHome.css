@@ -798,6 +798,41 @@ footer audio {
   }
 }
 
+#coleccion-2017 .tituloColeccion {
+  margin: 0;
+  color: #fff;
+  font-size: 2em;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #eb4300, 0 0 70px #eb4300, 0 0 80px #eb4300, 0 0 100px #eb4300, 0 0 140px #eb4300;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  #coleccion-2017 .tituloColeccion {
+    font-size: 2.6em;
+    padding-bottom: 0.5em;
+  }
+}
+@media (min-width: 1200px) {
+  #coleccion-2017 .scrollFotosColeccionesHijo:nth-child(1) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+  }
+  #coleccion-2017 .scrollFotosColeccionesHijo:nth-child(6) {
+    grid-column-start: span 2;
+  }
+  #coleccion-2017 .scrollFotosColeccionesHijo:nth-child(11) {
+    grid-column-start: span 2;
+  }
+  #coleccion-2017 .scrollFotosColeccionesHijo:nth-child(16) {
+    grid-column-start: span 2;
+  }
+  #coleccion-2017 .scrollFotosColeccionesHijo:nth-child(21) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+  }
+}
+
 @keyframes move {
   0% {
     text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
