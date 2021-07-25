@@ -6,6 +6,9 @@
 
   border-radius: 1.5em 4em 1.5em 4em;
 
+  width: 90vw;
+  height: 20em;
+
   @media (min-width: 768px) {
     width: 720px;
     height: 480px;
@@ -18,6 +21,10 @@
   h1 {
     @include letraBrillante(2.8em, nth($colors, 5));
     padding-bottom: 1em;
+  }
+
+  .videoContainer {
+    padding-bottom: 3em;
   }
 }
 

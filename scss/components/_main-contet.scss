@@ -83,15 +83,20 @@
         /* width: 95%; */
       }
       a {
-        padding: 1em 0px;
+        padding: 0.5em 0px;
         margin: auto;
+        font-size: 1.6em;
         white-space: nowrap;
+        color: rgb(201, 167, 122);
+        text-shadow: $hard rgb(84, 71, 26);
       }
 
       p {
         padding: 0px 0px 1em 0px;
         margin: auto;
         color: black;
+        font-size: 1.5em;
+        text-shadow: $iluminada rgb(98, 68, 22);
       }
       @media (max-width: 767px) {
         margin: 0 0 2em 0;
