@@ -1093,11 +1093,38 @@ footer audio {
     border: transparent;
   }
   .toggleTear a {
-    color: black;
-    font-size: 2em;
+    color: #343434;
+    font-size: 3em;
   }
   .toggleTear a :visited {
-    color: black;
+    color: #292929;
+  }
+}
+
+.toggleTearBack {
+  display: none;
+}
+@media (max-width: 991px) {
+  .toggleTearBack {
+    display: block;
+    height: 5em;
+    width: 5em;
+    position: fixed;
+    bottom: 2em;
+    left: 1.5em;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://i.ibb.co/ZgV430X/toggle-Tear.png");
+    background-size: cover;
+    border: transparent;
+  }
+  .toggleTearBack a {
+    color: #343434;
+    font-size: 3em;
+  }
+  .toggleTearBack a :visited {
+    color: #292929;
   }
 }
 

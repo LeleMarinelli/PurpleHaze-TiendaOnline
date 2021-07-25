@@ -20,11 +20,38 @@
     border: transparent;
 
     a {
-      color: black;
-      font-size: 2em;
+      color: rgb(52, 52, 52);
+      font-size: 3em;
 
       :visited {
-        color: black;
+        color: rgb(41, 41, 41);
+      }
+    }
+  }
+}
+
+.toggleTearBack {
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+    height: 5em;
+    width: 5em;
+    position: fixed;
+    bottom: 2em;
+    left: 1.5em;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://i.ibb.co/ZgV430X/toggle-Tear.png");
+    background-size: cover;
+    border: transparent;
+
+    a {
+      color: rgb(52, 52, 52);
+      font-size: 3em;
+
+      :visited {
+        color: rgb(41, 41, 41);
       }
     }
   }
