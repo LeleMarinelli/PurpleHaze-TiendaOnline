@@ -1073,6 +1073,51 @@ footer audio {
     text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
   }
 }
+/*/ /////// EXTRAS ////////*/
+.toggleTear {
+  display: none;
+}
+@media (max-width: 991px) {
+  .toggleTear {
+    display: block;
+    height: 5em;
+    width: 5em;
+    position: fixed;
+    bottom: 2em;
+    right: 1.5em;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://i.ibb.co/ZgV430X/toggle-Tear.png");
+    background-size: cover;
+    border: transparent;
+  }
+  .toggleTear a {
+    color: black;
+    font-size: 2em;
+  }
+  .toggleTear a :visited {
+    color: black;
+  }
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+  25% {
+    text-shadow: -4px -4px 0 #6d47ce, -3px -3px 0 #6d47ce, -2px -2px 0 #6d47ce, -1px -1px 0 #6d47ce, 4px 4px 0 #8100eb, 3px 3px 0 #8100eb, 2px 2px 0 #8100eb, 1px 1px 0 #8100eb;
+  }
+  50% {
+    text-shadow: -4px 4px 0 #8100eb, -3px 3px 0 #8100eb, -2px 2px 0 #8100eb, -1px 1px 0 #8100eb, 4px -4px 0 #6d47ce, 3px -3px 0 #6d47ce, 2px -2px 0 #6d47ce, 1px -1px 0 #6d47ce;
+  }
+  75% {
+    text-shadow: 4px 4px 0 #6d47ce, 3px 3px 0 #6d47ce, 2px 2px 0 hs #6d47ce, 1px 1px 0 #6d47ce, -4px -4px 0 #8100eb, -3px -3px 0 #8100eb, -2px -2px 0 #8100eb, -1px -1px 0 #8100eb;
+  }
+  100% {
+    text-shadow: 4px -4px 0 #8100eb, 3px -3px 0 #8100eb, 2px -2px 0 #8100eb, 1px -1px 0 #8100eb, -4px 4px 0 #6d47ce, -3px 3px 0 #6d47ce, -2px 2px 0 #6d47ce, -1px 1px 0 #6d47ce;
+  }
+}
 /*////////// GENERAL //////////////////*/
 html {
   box-sizing: border-box;

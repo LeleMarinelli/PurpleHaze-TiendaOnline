@@ -1,0 +1,31 @@
+@import "../base/mixin";
+@import "../base/variables";
+@import "../base/maps";
+
+/*/ /////// EXTRAS ////////*/
+.toggleTear {
+  display: none;
+  @media (max-width: 991px) {
+    display: block;
+    height: 5em;
+    width: 5em;
+    position: fixed;
+    bottom: 2em;
+    right: 1.5em;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url("https://i.ibb.co/ZgV430X/toggle-Tear.png");
+    background-size: cover;
+    border: transparent;
+
+    a {
+      color: black;
+      font-size: 2em;
+
+      :visited {
+        color: black;
+      }
+    }
+  }
+}
