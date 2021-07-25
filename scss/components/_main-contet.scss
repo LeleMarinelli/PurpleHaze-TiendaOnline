@@ -16,10 +16,11 @@
 
 .fondoMarble {
   color: black;
-  background-image: url("https://i.ibb.co/WPsZyw7/fondo-Marble-Opt.jpg");
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-image: url("https://i.ibb.co/9wbDC8y/fondo-Marble-Opt.jpg");
+
+  background-repeat: repeat;
+
+  background-size: contain;
   background-attachment: scroll;
 
   font-family: "Amiko", sans-serif;
@@ -52,6 +53,12 @@
 
   h2 {
     @include letraPoison(2em);
+  }
+
+  #Instruccion1 {
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .productosContainer {

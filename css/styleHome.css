@@ -138,7 +138,7 @@ header {
     background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
     position: absolute;
     top: 6em;
-    left: -14em;
+    left: 1em;
     transition: left 0.3s;
   }
   header .menu .botonMenuContainer a {
@@ -155,7 +155,7 @@ header {
   }
 }
 header .menu_visible {
-  left: 1em;
+  left: -14em;
 }
 @media (min-width: 992px) {
   header {
@@ -343,10 +343,9 @@ footer audio {
 }
 .fondoMarble {
   color: black;
-  background-image: url("https://i.ibb.co/WPsZyw7/fondo-Marble-Opt.jpg");
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: cover;
+  background-image: url("https://i.ibb.co/9wbDC8y/fondo-Marble-Opt.jpg");
+  background-repeat: repeat;
+  background-size: contain;
   background-attachment: scroll;
   font-family: "Amiko", sans-serif;
   font-family: "Epilogue", sans-serif;
@@ -398,6 +397,11 @@ footer audio {
   .galeriaProducto h2 {
     padding: 1em 0;
     font-size: 3em;
+  }
+}
+@media (max-width: 768px) {
+  .galeriaProducto #Instruccion1 {
+    display: none;
   }
 }
 .galeriaProducto .productosContainer {
@@ -1119,6 +1123,10 @@ html body a {
 }
 html body a:hover {
   color: grey;
+}
+
+#proximamente {
+  height: 90%;
 }
 
 /*# sourceMappingURL=styleHome.css.map */

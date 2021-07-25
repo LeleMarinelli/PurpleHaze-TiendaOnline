@@ -67,8 +67,9 @@ header {
       background-image: url("https://i.ibb.co/Cz7rrtQ/fondomenu22.png");
 
       position: absolute;
+
       top: 6em;
-      left: -14em;
+      left: 1em;
       transition: left 0.3s;
 
       .botonMenuContainer {
@@ -90,7 +91,7 @@ header {
   }
 
   .menu_visible {
-    left: 1em;
+    left: -14em;
   }
 
   @media (min-width: 992px) {
